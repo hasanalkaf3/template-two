@@ -3,6 +3,22 @@ for (let i = 4; i < document.images.length; i++) {
   document.images[i].setAttribute("loading", "lazy");
 }
 
+// ---------- Header
+// Toggle Menu
+const toggleMenu = document.getElementById("toggle-menu"),
+  homeList = document.querySelector("#toggle-menu + ul");
+
+let closeMainMenu = 0;
+
+toggleMenu.addEventListener("click", () => {
+  closeMainMenu += 1;
+  if (closeMainMenu % 2 === 1) homeList.style.display = "flex";
+});
+
+toggleMenu.addEventListener("click", () => {
+  if (closeMainMenu % 2 === 0) homeList.style.display = "none";
+});
+
 // ---------- Landing Section
 // Image Slider
 const slides = document.querySelectorAll("#landing > img"),
