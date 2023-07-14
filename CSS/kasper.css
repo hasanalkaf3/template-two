@@ -138,18 +138,15 @@ header nav ul {
 @media (max-width: 767px) {
   header nav ul {
     display: none;
-  }
-  header nav .toggle-menu {
-    display: inline-block;
-  }
-  header nav .toggle-menu:hover + ul {
-    display: flex;
     flex-direction: column;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background-color: hsla(0, 0%, 0%, 0.5);
+  }
+  header nav .toggle-menu {
+    display: inline-block;
   }
   header nav ul li a {
     padding: 15px !important;
@@ -510,20 +507,19 @@ header nav .form i {
 }
 .portfolio .imgs-container .modal {
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  padding-top: 100px;
   overflow: auto;
   display: none;
 }
 .portfolio .imgs-container .modal .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 5%;
+  right: 8%;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -537,7 +533,10 @@ header nav .form i {
 }
 .portfolio .imgs-container .modal .modal-content {
   display: block;
-  margin: auto;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 80%;
   max-width: 700px;
 }
@@ -550,7 +549,12 @@ header nav .form i {
   display: block;
   width: 80%;
   max-width: 700px;
-  margin: 20px auto 0;
+  position: relative;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 15%;
+  padding-bottom: 15%;
   text-align: center;
   color: #ccc;
 }
@@ -561,10 +565,10 @@ header nav .form i {
 }
 @keyframes zoom {
   0% {
-    transform: scale(0);
+    scale: 0;
   }
   100% {
-    transform: scale(1);
+    scale: 1;
   }
 }
 /* ---------- End Portfolio Section ---------- */
