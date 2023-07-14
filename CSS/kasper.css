@@ -144,12 +144,24 @@ header nav ul {
     left: 0;
     width: 100%;
     background-color: hsla(0, 0%, 0%, 0.5);
+    transform-origin: 100% 0%;
+    animation: show-menu 0.6s;
   }
   header nav .toggle-menu {
     display: inline-block;
   }
   header nav ul li a {
     padding: 15px !important;
+  }
+}
+@keyframes show-menu {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 header nav ul li a {
