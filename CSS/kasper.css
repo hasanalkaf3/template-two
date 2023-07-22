@@ -650,7 +650,7 @@ header nav .form i {
 .stats {
   padding: var(--padding-of-section) 0;
   text-align: center;
-  background-image: url(../images/stats.png);
+  background-image: url(../images/stats.avif);
   background-size: cover;
   position: relative;
 }
