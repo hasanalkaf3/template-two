@@ -160,13 +160,8 @@ reviewContents.forEach((content, ind) => {
     reviewParag = document.createElement("p"),
     reviewParagText = document.createTextNode("John Doe, CEO");
 
-  let format = "avif";
-
   reviewConImg.className = "image";
-  if (ind % 2 === 1) {
-    format = "jpg";
-  }
-  reviewImg.src = `images/skills-0${ind + 1}.${format}`;
+  reviewImg.src = `images/skills-0${ind + 1}.avif`;
   reviewImg.alt = "Person";
   reviewConText.className = "text";
 

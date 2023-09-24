@@ -357,7 +357,7 @@ header nav .form i {
 /* ---------- Start Design ---------- */
 .design {
   padding: var(--padding-of-section) 0;
-  background-image: url(../images/design-features.jpg);
+  background-image: url(../images/design-features.avif);
   background-size: cover;
   height: 600px;
   display: flex;
@@ -842,7 +842,7 @@ header nav .form i {
 /* ---------- Start Quote ---------- */
 .quote {
   padding: var(--padding-of-section) 0;
-  background-image: url(../images/quote.jpg);
+  background-image: url(../images/quote.avif);
   background-size: cover;
   position: relative;
 }
@@ -958,7 +958,7 @@ header nav .form i {
 /* ---------- Start Subscribe ---------- */
 .subscribe {
   padding: var(--padding-of-section) 0;
-  background-image: url(../images/subscribe.jpg);
+  background-image: url(../images/subscribe.avif);
   background-size: cover;
   position: relative;
 }
@@ -1105,7 +1105,7 @@ header nav .form i {
 /* ---------- Start Foot ---------- */
 footer {
   padding: calc(var(--padding-of-section) / 2) 0;
-  background-image: url(../images/subscribe.jpg);
+  background-image: url(../images/subscribe.avif);
   background-size: cover;
   position: relative;
   text-align: center;
